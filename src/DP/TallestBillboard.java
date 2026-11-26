@@ -19,9 +19,7 @@ public class TallestBillboard {
                 next.put(newDiff, Math.max(next.getOrDefault(newDiff, 0), newShort));
                 int shortDiff = Math.abs(diff - rod);
                 int shortHeight = shorter + Math.min(diff, rod);
-
                 next.put(shortDiff, Math.max(next.getOrDefault(shortDiff, 0), shortHeight));
-
             }
             dp = next;
         }
